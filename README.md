@@ -51,7 +51,7 @@ este modelo considera que se a SINR do sinal recebido for maior ou igual ao limi
 
 ## Exemplos
 
-A seguir são apresentados dois [exemplos](https://github.com/fabioengel/SINR/tree/master/exemplos). Ambos são projetos do simulador SINR e estão disponíveis para download. Estes projetos buscam mostrar que o simulador SINR é capaz de simular o modelo em questão. Os valores utilizados em cada exemplo podem ser modificados por meio de cada respectivo arquivo omnetpp.ini. Bem como novas adaptações podem ser realizadas a partir destes exemplos.
+A seguir são apresentados dois [exemplos](https://github.com/fabioengel/SINR/tree/master/exemplos). Ambos são projetos do simulador SINR e estão disponíveis para download. Estes projetos buscam mostrar que o simulador SINR é capaz de simular o modelo em questão. Os valores utilizados em cada exemplo podem ser modificados por meio de cada respectivo arquivo omnetpp.ini. Bem como novas adaptações podem ser realizadas a partir destes exemplos. Um [vídeo](https://www.youtube.com/watch?v=Ts0pLwKRHnU) está disponível mostrando a execução.
 
 ### Exemplo 01
 No [exemplo 01](https://github.com/fabioengel/SINR/tree/master/exemplos/Exemplo01) é considerado um cenário com três links: (a,b), (c,d) e (f,e). Considera-se o momento em que os dispositivos  "a" , "c" e "f" realizam uma transmissão. 
@@ -87,7 +87,8 @@ O simulador SINR proposto é uma ferramenta que auxilia o desenvolvimento de alg
 Trabalhos que utilizaram o simulador SINR:
 - [Argumentos para a Inviabilidade Prática de uma Estratégia de Escalonamento para Redes Sem Fio sob o Modelo SINR](https://sol.sbc.org.br/index.php/wtf/article/view/17200).
 - [A Down-to-Earth Scheduling Strategy for Dense SINR Wireless Networks](https://ieeexplore.ieee.org/document/9672559).
-
+ 
+    
 ### Contato
 Fábio Engel -- fabioe@utfp.edu.br
 
