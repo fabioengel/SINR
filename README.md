@@ -2,7 +2,7 @@
 O simulador SINR é uma implementação feita sobre o simulador OMNeT++ e o arcabouço INET Framework. O OMNeT++ (acrônimo para Objective Modular Network Testbed in C++) é um simulador de eventos discretos baseado em C++. Seu código é aberto e está liberado para uso sob a licença Academic Public License, que o torna livre para o uso sem fins lucrativos. O OMNeT++ não é propriamente uma plataforma para simulação de redes de computadores. Entretanto, os autores do projeto mantém um arcabouço de modelos para redes cabeadas e sem fio chamada INET Framework. O INET possui modelos para pilha de protocolos da Internet, além de diversos outros protocolos e componentes de rede. Ainda que possua boa parte dos componentes e protocolos de rede, não há um módulo específico para que o modelo SINR seja utilizado. O simulador SINR, portanto, realiza algumas modificações em módulos do INET Framework para implementação do modelo SINR. A seguir, são descritos os passos necessários para instalação e exemplos de utilização da ferramenta.
 
 ## Instalação
-- OMNeT++ 6.0 (15/04/2022) - [Linux](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-linux-x86_64.tgz) / [Windows](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-windows-x86_64.zip)
+- OMNeT++ 6.0 - [Linux](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-linux-x86_64.tgz) / [Windows](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-windows-x86_64.zip)
     - O guia de instalação está disponível em omnetpp-6.0/doc/InstallGuide.pdf.
     - Guia de instalação para o Ubuntu 21.10:
         - Instalar pacotes pré-requisitados.
@@ -37,10 +37,10 @@ O simulador SINR é uma implementação feita sobre o simulador OMNeT++ e o arca
             $ omnetpp
         ```
 
--  [INET-4.3.6](https://github.com/inet-framework/inet/releases/download/v4.3.6/inet-4.3.6-src.tgz) (para OMNeT++ 6.0 - 15/04/2022)
+-  [INET-4.3.9](https://github.com/inet-framework/inet/releases/download/v4.3.9/inet-4.3.9-src.tgz) (para OMNeT++ 6.0)
     - Descompactar o arquivo em sua pasta de projetos.
      ```{r, engine='bash', descompact}
-            $ tar xvfz inet-4.3.6-src.tgz
+            $ tar xvfz inet-4.3.9-src.tgz
       ```
     - Importar o Inet como projeto (File/Import/General - Existing Projects into Workspace) e depois o compilar.
 - Simulador SINR
