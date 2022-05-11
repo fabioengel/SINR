@@ -68,7 +68,7 @@ Para o [exemplo 02](https://github.com/fabioengel/SINR/tree/master/exemplos/Exem
 | Distancia entre Hosts 2 e 1 | 135m | 125m | 115m | 105m | 95m | 85m | 75m | 65m | 55m | 45m | 35m |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | SINR do sinal de Host 0 | **7.02dB** | **5.69dB** | **4.25dB** | **2.67dB** | 0.93dB | -0.99dB | -3.16dB | -5.65dB | -8.55dB | -12.4dB | -16.4dB |
-| SINR do sinal de Host 2 | -7.04dB | -5.70dB | -4.26dB | -2.68dB | -0.94 | 0.99dB | **3.16dB** | **5.65dB** | **-8.55dB** | **12.0dB** | **16.4dB** |
+| SINR do sinal de Host 2 | -7.04dB | -5.70dB | -4.26dB | -2.68dB | -0.94 | 0.99dB | **3.16dB** | **5.65dB** | **8.55dB** | **12.0dB** | **16.4dB** |
 
  É possível observar três situações distintas:
  - Distância entre 1 e 2 maior que 105m -- O nível do sinal de 0 é maior no receptor, e o sinal de 2, tratado como interferência, não é o suficiente para impedir o recebimento do sinal de 0.
