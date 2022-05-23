@@ -25,24 +25,21 @@ O simulador SINR é uma implementação feita sobre o simulador OMNeT++ e o arca
         ```{r, engine='bash', descompact}
             $ make
         ```
-        - O OMNeT++ já está instalado. Para facilitar seu uso, adicione o diretório no qual foi feita instalação em PATH. Por exemplo, seja "/home/fabio/Software/omnetpp-6.0" o diretório, basta então:
+        - O OMNeT++ já está instalado. Para facilitar seu uso, adicione o diretório no qual foi feita instalação em PATH. Por exemplo, seja "/home/fabio/Software/omnetpp-6.0pre15" o diretório, basta então:
         ```{r, engine='bash', descompact}
             $ sudo gedit ~/.bashrc
         ```
-        - Copiar para o final do arquivo: "export PATH=$PATH:/home/fabio/Software/omnetpp-6.0/bin"
+        - Copiar para o final do arquivo: "export PATH=$PATH:/home/fabio/Software/omnetpp-6.0pre15/bin"
         - O OMNeT++ pode ser iniciado no terminal:
         ```{r, engine='bash', descompact}
             $ omnetpp
         ```
 
--  [INET-4.3.9](https://github.com/inet-framework/inet/releases/download/v4.3.9/inet-4.3.9-src.tgz) (para OMNeT++ 6.0)
+-  [INET-4.3.6](https://github.com/fabioengel/SINR/blob/master/arquivos/inet4.3.zip)
     - Descompactar o arquivo em sua pasta de projetos.
-     ```{r, engine='bash', descompact}
-            $ tar xvfz inet-4.3.9-src.tgz
-      ```
     - Importar o Inet como projeto (File/Import/General - Existing Projects into Workspace) e depois o compilar.
 - Simulador SINR
-    - Copiar os 3 arquivos de [ModelSINRPathLoss](https://github.com/fabioengel/SINR/blob/master/arquivos/ModelSINRPathLoss.zip) para "inet4.3/src/inet/physicallayer/wireless/common/pathloss". Este novo módulo assume que a potência do sinal transmitido decai proporcionalmente ao inverso da distância euclidiana entre emissor e receptor, elevados a um expoente denominado de \textit{path loss} (perda de percurso).
+    - Copiar os 3 arquivos de [ModelSINRPathLoss](https://github.com/fabioengel/SINR/blob/master/arquivos/ModelSINRPathLoss.zip) para "inet4.3/src/inet/physicallayer/wireless/common/pathloss". Este novo módulo assume que a potência do sinal transmitido decai proporcionalmente ao inverso da distância euclidiana entre emissor e receptor, elevados a um expoente denominado de path loss (perda de percurso).
     - Copiar os 3 arquivos de [ModelSinrError](https://github.com/fabioengel/SINR/blob/master/arquivos/ModelSinrError.zip) para o seu projeto.
 este modelo considera que se a SINR do sinal recebido for maior ou igual ao limite SINR, não devem existir erros nos bits recebidos, podendo, portanto, receber corretamente o sinal. Caso contrário, erros são inseridos de acordo com a relação sinal ruído mais interferência e considera-se a recepção impossível de ser feita.
     - Copiar os arquivos de [imagens](https://github.com/fabioengel/SINR/blob/master/arquivos/imagem.zip) para "inet4.3/images/device/". (Estas imagens são utilizadas nos exemplos).
