@@ -2,7 +2,7 @@
 O simulador SINR é uma implementação feita sobre o simulador OMNeT++ e o arcabouço INET Framework. O OMNeT++ (acrônimo para Objective Modular Network Testbed in C++) é um simulador de eventos discretos baseado em C++. Seu código é aberto e está liberado para uso sob a licença Academic Public License, que o torna livre para o uso sem fins lucrativos. O OMNeT++ não é propriamente uma plataforma para simulação de redes de computadores. Entretanto, os autores do projeto mantém um arcabouço de modelos para redes cabeadas e sem fio chamada INET Framework. O INET possui modelos para pilha de protocolos da Internet, além de diversos outros protocolos e componentes de rede. Ainda que possua boa parte dos componentes e protocolos de rede, não há um módulo específico para que o modelo SINR seja utilizado. O simulador SINR, portanto, realiza algumas modificações em módulos do INET Framework para implementação do modelo SINR. A seguir, são descritos os passos necessários para instalação e exemplos de utilização da ferramenta.
 
 ## Instalação
-- OMNeT++ 6.0 - [Linux](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-linux-x86_64.tgz) / [Windows](https://github.com/omnetpp/omnetpp/releases/download/omnetpp-6.0/omnetpp-6.0-windows-x86_64.zip)
+- OMNeT++ 6.0pre15 - [Linux](https://drive.google.com/file/d/1bk4FbVXXT4eMOyOC_wYXgt9Ft6aNH_32/view?usp=sharing.zip)
     - O guia de instalação está disponível em omnetpp-6.0/doc/InstallGuide.pdf.
     - Guia de instalação para o Ubuntu 21.10:
         - Instalar pacotes pré-requisitados.
@@ -10,13 +10,11 @@ O simulador SINR é uma implementação feita sobre o simulador OMNeT++ e o arca
             $ sudo apt-get install build-essential clang lld gdb bison flex perl python3 python3-pip qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5opengl5-dev libxml2-dev zlib1g-dev doxygen graphviz libwebkit2gtk-4.0-37 libopenscenegraph-dev
             $ python3 -m pip install --user --upgrade numpy pandas matplotlib scipy seaborn posix_ipc
         ```        
-        - Descompactar o arquivo omnetpp-6.0-linux-x86_64.
-       ```{r, engine='bash', descompact}
-            $ tar xvfz omnetpp-6.0-linux-x86_64.tgz
-        ```
-        - O OMNeT++ requer que certas váriaveis de ambiente sejam definidas e que o diretório omnetpp-6.0/bin esteja em PATH. Executar o script setenv para configurar estas variáveis.
+        - Descompactar o arquivo omnetpp-6.0pre15.zip.
+
+        - O OMNeT++ requer que certas váriaveis de ambiente sejam definidas e que o diretório omnetpp-6.0pre15/bin esteja em PATH. Executar o script setenv para configurar estas variáveis.
         ```{r, engine='bash', descompact}
-            $ cd omnetpp-6.0
+            $ cd omnetpp-6.0pre15
             $ source setenv
         ```
         - O script "configure" detecta software instalado e configura o sistema.
